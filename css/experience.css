@@ -1,0 +1,154 @@
+.experience {
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+}
+
+.subtitulo {
+  font-size: 8rem;
+  word-break: break-all;
+  line-height: 1;
+  text-transform: uppercase;
+  max-width: 5ch;
+  font-family: "playfair display";
+}
+
+.experience .subtitulo {
+  color: #85b8d7;
+}
+
+.experince-text {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  max-width: 40ch;
+  margin-bottom: 60px;
+  color: #525252;
+}
+
+.empresa {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 20px;
+  padding: 20px;
+  background: #f5f5f5;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  position: relative;
+}
+
+.empresa-ano {
+  position: absolute;
+  top: 20px;
+  left: -100px;
+  width: 80px;
+  text-align: right;
+  color: #525252;
+  font-size: 0.875rem;
+}
+.empresa::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 20px;
+  background: linear-gradient(#f4e65b, #ddcc2b);
+  position: absolute;
+  top: 20px;
+  left: -4px;
+}
+
+.empresa-titulo {
+  font-size: 1.125rem;
+  line-height: 1.1;
+  font-weight: bold;
+}
+
+.empresa-texto {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: #525252;
+}
+
+.empresa-habilidades {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-content: start;
+}
+
+.empresa-habilidades li {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  border-radius: 4px;
+  background: #ffffff;
+  padding: 5px 10px;
+}
+
+.behance-text {
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  font-size: 36px;
+  max-width: 30ch;
+  font-style: italic;
+}
+
+.behance-button {
+  background: #000;
+  display: flex;
+  max-width: 145px;
+  border-radius: 50px;
+  gap: 10px;
+  padding: 10px;
+  align-content: mid;
+  margin: 0 auto;
+  flex: wrap;
+  align-items: center;
+  margin-bottom: 40px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 17px;
+}
+
+/* Responsivo */
+
+@media (max-width: 800px) {
+  .experience {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: -30px;
+  }
+
+  .subtitulo {
+    font-size: 3rem;
+    text-transform: inherit;
+    max-width: fit-content;
+  }
+
+  .subtitulo br {
+    display: none;
+  }
+
+  .experince-text {
+    font-size: 1.25rem;
+  }
+
+  .empresa-ano {
+    position: initial;
+    order: 1;
+    width: initial;
+    text-align: left;
+  }
+
+  .behance-text {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 400px) {
+  .empresa {
+    grid-template-columns: 1fr;
+  }
+}
