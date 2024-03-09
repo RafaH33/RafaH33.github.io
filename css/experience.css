@@ -147,8 +147,12 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 410px) {
   .empresa {
     grid-template-columns: 1fr;
+  }
+
+  .behance-text {
+    font-size: 18px;
   }
 }
