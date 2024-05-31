@@ -112,13 +112,6 @@
   font-size: 17px;
 }
 
-.behance-button:hover {
-  background: #f4e65b;
-  color: #222222;
-  font-weight: bold;
-  transition: 0.2s;
-}
-
 /* Responsivo */
 
 @media (max-width: 800px) {
@@ -154,12 +147,8 @@
   }
 }
 
-@media (max-width: 410px) {
+@media (max-width: 400px) {
   .empresa {
     grid-template-columns: 1fr;
-  }
-
-  .behance-text {
-    font-size: 18px;
   }
 }
